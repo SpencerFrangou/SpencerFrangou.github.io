@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spencer W. Frangou</title>
+<meta name="description" content="Spencer W. Frangou — high school researcher interested in applied mathematics and the analysis of real-world data.">
+<meta property="og:title" content="Spencer W. Frangou">
+<meta property="og:description" content="Applied mathematics and the analysis of real-world data.">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --navy:#16222e; --blue:#2c7fb8; --ink:#1c2630; --muted:#5b6b78;
+    --paper:#ffffff; --soft:#f4f7fa; --line:#e4eaef;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--paper);line-height:1.65;font-size:16.5px}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px}
+  header{background:var(--navy);color:#fff;padding:60px 0 54px}
+  .hrow{display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+  .photo{width:112px;height:112px;border-radius:50%;object-fit:cover;border:3px solid #2c7fb8;flex:none}
+  header h1{margin:0 0 6px;font-size:34px;font-weight:800;letter-spacing:-.3px}
+  header p{margin:0;color:#a9c3d6;font-size:17px}
+  .links{margin-top:14px;display:flex;gap:16px;flex-wrap:wrap;font-size:15px}
+  .links a{color:#dce8f1}
+  section{padding:44px 0;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:none}
+  h2{font-size:21px;margin:0 0 14px;color:var(--navy);font-weight:700}
+  p{margin:0 0 15px}
+  .card{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .card h3{margin:0 0 6px;font-size:18px;color:var(--navy)}
+  .card .meta{margin:0 0 12px;color:var(--muted);font-size:14px}
+  .card .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+  .btn{display:inline-block;padding:8px 15px;border-radius:7px;font-size:14px;font-weight:600;
+    background:var(--blue);color:#fff}
+  .btn.alt{background:#fff;color:var(--blue);border:1px solid var(--blue)}
+  .btn:hover{text-decoration:none;opacity:.92}
+  .cite{background:var(--soft);border-left:3px solid var(--blue);border-radius:4px;padding:14px 18px;font-size:15px;color:var(--ink)}
+  ul.tags{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:9px}
+  ul.tags li{background:#eef3f7;border:1px solid var(--line);border-radius:20px;padding:5px 13px;font-size:14px;color:var(--ink)}
+  footer{padding:28px 0 46px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap hrow">
+    <img class="photo" src="profile.jpg" alt="Spencer W. Frangou">
+    <div>
+      <h1>Spencer W. Frangou</h1>
+      <p>Applied mathematics and the analysis of complex data</p>
+      <div class="links">
+        <a href="https://github.com/SpencerFrangou">GitHub</a>
+        <a href="https://orcid.org/0009-0008-1125-4053">ORCID</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>I am a high school student with a strong interest in applied mathematics and in the
+    analysis of complex, real-world data. Since 2025 I have contributed to the computational
+    analysis of a breast cancer research project in the Zhang Lab at the University of
+    Toledo, where I work on turning large volumes of raw measurement into results the lab
+    can rely on.</p>
+    <p>I am especially interested in the structure within complex data, and in how the
+    individual parts of a system relate to one another. This is what draws me to network
+    analysis and, more broadly, to problems that are answered through careful quantitative
+    reasoning rather than through collecting more data.</p>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <h2>Research</h2>
+    <p>My work focuses on making large, complex gene-expression datasets interpretable. It
+    spans three connected stages: standardizing the measurements and linking each gene to
+    established biological knowledge resources; distinguishing human tumor signal from
+    mouse background in models where human tumors are grown in mice; and, increasingly,
+    analyzing genes as networks to understand why a tumor behaves as it does, not only
+    which genes change.</p>
+    <p>This analysis supports a study of why certain breast cancers recur in the lung,
+    described in the conference abstract below.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p style="color:var(--muted);margin:-4px 0 18px">Open-source research software I have
+    developed, from analyzing gene-expression data to measuring how cancer cells grow and
+    survive under different conditions.</p>
+    <div class="card">
+      <h3>XenoPanel</h3>
+      <p class="meta">An open-source toolkit for analyzing targeted RNA sequencing data</p>
+      <p>A toolkit I developed for analyzing targeted RNA sequencing data. It removes
+      cross-species contamination, standardizes and compares gene-expression measurements,
+      and is fully documented, validated against an independent analysis, and archived with
+      a citable DOI for reuse.</p>
+      <div class="btns">
+        <a class="btn" href="https://spencerfrangou.github.io/XenoPanel/">Website</a>
+        <a class="btn alt" href="https://github.com/SpencerFrangou/XenoPanel">Code</a>
+        <a class="btn alt" href="https://doi.org/10.5281/zenodo.23768221">DOI</a>
+      </div>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <h3>ColonyCounter</h3>
+      <p class="meta">Automated analysis of colony-formation assays</p>
+      <p>Software I developed to measure cell colonies from flatbed scans of stained
+      laboratory plates. It locates each well, identifies and counts the colonies, measures
+      their size and staining, and produces the statistics and a report automatically,
+      in place of slow and subjective manual counting. Documented, tested, and archived
+      with a citable DOI.</p>
+      <div class="btns">
+        <a class="btn" href="https://github.com/SpencerFrangou/ColonyCounter">Code</a>
+        <a class="btn alt" href="https://doi.org/10.5281/zenodo.23780010">DOI</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="presentations">
+  <div class="wrap">
+    <h2>Presentations</h2>
+    <p class="cite">Chenchik A, Frangou S, Kobzik L, Zhang J. <em>A tissue-dependent
+    tumor-cell gene expression program in breast cancer is associated with lung relapse.</em>
+    Abstract submitted to the American Association for Cancer Research (AACR) Annual
+    Meeting 2027, Orlando, FL.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <ul class="tags">
+      <li>R</li><li>Python</li><li>Statistical analysis</li><li>Image analysis</li>
+      <li>Network analysis</li><li>Data standardization</li><li>Reproducible research</li>
+      <li>Bioinformatics</li><li>Version control (Git)</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Zhang Lab, Department of Cell and Cancer Biology, University of Toledo ·
+    <a href="https://github.com/SpencerFrangou">github.com/SpencerFrangou</a> ·
+    <a href="https://orcid.org/0009-0008-1125-4053">ORCID 0009-0008-1125-4053</a>
+  </div>
+</footer>
+</body>
+</html>
